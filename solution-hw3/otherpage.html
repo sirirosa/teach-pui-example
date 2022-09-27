@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <title> Page Title</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/code.js" defer></script>
+
+  <head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Bun Bun</title>
+  </head>
+
+  <body>
+
+    <div class="headerparent">
+      <div class="logo">
+            <img class="logo" src="./products/logo-01.svg" alt="logo">
+      </div>
+
+      <div class="navtitle">
+            <div class = "nav">
+                <a href="./index.html" class="hovermenu">products</a>
+                <a href="./cart.html" class="hovermenu">cart</a>
+                  <!-- Hyperlinks "cart" and "products" -->
+            </div>
+            <div> <hr> </div>
+            <div class="titletext">
+                  <h4> Original cinnamon roll </h4>
+            </div>
+      </div>
+    </div>
+
+  <div class="productdetails">
+
+    <div class="productdetails-image">
+    <img src="./products/original-cinnamon-roll.jpg" alt="original cinnamon roll" class="productdetails-imagestyle">
+    </div>
+
+    <div class="productdetails-captiondropdownstotal">
+
+    <div class="productdetails-caption">
+    <p> Customize our delicious, hand-made cinnamon roll to your liking! </p>
+    </div>
+   
+    <div class="productdetails-dropdowns">
+
+    <label for="glaze">Glazing:</label>
+    <!-- Adds label for dropdown -->
+
+    <div class="dropdown">
+
+    <select name="glaze" id="glaze" class="productdetails-caption" onchange="glazeChange(this)">
+      <!-- <option value="Keep original">Keep original</option>
+      <option value="Sugar milk">Sugar milk</option>
+      <option value="Vanilla milk">Vanilla milk</option>
+      <option value="Double chocolate">Double chocolate</option> -->
+    </select>
+    <!-- Dropdown values -->
+
+    </div>
+
+    <label for="pack">Pack size:</label>
+    <!-- Adds label for dropdown -->
+
+    <div class="dropdown">
+ 
+    <select name="roll" id="roll" class="productdetails-caption" onchange="packChange(this)">
+      <!-- <option value="1">1</option>
+      <option value="3">3</option>
+      <option value="6">6</option>
+      <option value="12">12</option> -->
+    </select>
+    <!-- Dropdown values -->
+
+    </div>
+
+</div>
+
+    <div class="productdetails-total">
+
+        <p> $2.49 </p>
+            
+        <button type="button" class="buttonright">Add to Cart</button>
+    
+    </div>
+
+    </div>
+   
+  </div>
+
+  </body>
+
+</html>
