@@ -1,6 +1,6 @@
 // Zoya Egiazaryan helped me understand how to create classes, objects, and arrays 
 
-// class for glaze type and packs
+// create classes for glaze type and pack size
 
 class Rolls {
     glazeOptions;
@@ -69,7 +69,6 @@ for (let i = 0; i < packArray.length; i++) {
     a.add(option);
 }
 
-
 let packPrice = 1.0;
 
 function packChange(element) {
@@ -99,7 +98,7 @@ function updateTotalPrice(price) {
     document.querySelector(".productdetails-total p").innerText = "$" + price.toFixed(2);
 }
 
-// the following was the code Joy Mukherjee helped me write to help me understand the logic behingd the program
+// the following was the code Joy Mukherjee helped me write to help me understand the logic behind the program
 
 
 // let priceChange = 0;
