@@ -1,4 +1,4 @@
-// Zoya helped me understand how to create classes, objects, and arrays 
+// Zoya Egiazaryan helped me understand how to create classes, objects, and arrays 
 
 // class for glaze type and packs
 
@@ -37,21 +37,20 @@ let twelve = new Pack(12, 10);
 const glazeArray = [keepOriginal, vanillaMilk, sugarMilk, doubleChocolate];  
 const packArray = [one, three, six, twelve]; 
 
-// Napol taught me how to create for loops and functions 
+// Napol walked me through how to create for loops and functions 
 
 // create a for loop to populate dropdown with glaze options 
 
 for (let i = 0; i < glazeArray.length; i++) {
     let a = document.getElementById("glaze");
-    // Create the option element
+    // create the option element
     var option = document.createElement('option');
-
-    let glaze = glazeArray[i] // get the ith element in glazeArray
-
-    // Change the innerText and value accordingly
+    // get the ith element in glazeArray
+    let glaze = glazeArray[i];
+    // change the innerText and value accordingly
     option.text = glaze.glazeOptions;
     option.value = glaze.glazePrice;
-    // Add the option element to related select input.
+    // add the option element to related select input.
     a.add(option);
 }
 
@@ -61,7 +60,8 @@ for (let i = 0; i < packArray.length; i++) {
     let a = document.getElementById("roll");
     // create the option element
     var option = document.createElement('option');
-    let pack = packArray[i] // get the ith element in glazeArray
+    // get the ith element in glazeArray
+    let pack = packArray[i];
     // change the innerText and value accordingly
     option.text = pack.packSize;
     option.value = pack.packMultiplier;
@@ -82,25 +82,24 @@ let glazingPrice = 0.0;
 
 function glazeChange(element) {
     const newGlazePrice = parseFloat(element.value);
-    glazingPrice = newGlazePrice; // can create it based on this
+    glazingPrice = newGlazePrice; 
     calculateNewPrice();
 }
 
 let basePrice = 2.49;
 
 function calculateNewPrice() {
-    let newPrice = (basePrice + glazingPrice) * packPrice;
+    let newPrice = (basePrice + glazingPrice) * packPrice; 
     console.log(newPrice);
     updateTotalPrice(newPrice);
 }
 
 function updateTotalPrice(price) {
+    // changes dollar value with added dollar sign and rounds the price to 2 decimals 
     document.querySelector(".productdetails-total p").innerText = "$" + price.toFixed(2);
 }
 
-// add line for hw3 
-
-// the following was the code I wrote to help me understand the logic of for loops 
+// the following was the code Joy Mukherjee helped me write to help me understand the logic behingd the program
 
 
 // let priceChange = 0;
