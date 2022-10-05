@@ -1,0 +1,268 @@
+/* GLOBAL */
+
+.logo {
+    display: flex;
+    border: 0px;
+    padding: 10px;
+    width: 400px
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+/* removes underline from hyperlinks */
+
+.hovermenu:hover {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.hovermenu {
+    text-transform: uppercase;
+    font-weight: 1px;
+    font-size: 20px;
+    margin-left: 75px;
+}
+
+h1 {
+    font-family: serif;
+    font-size: 36px;
+    text-align: center;
+}
+
+h2 {
+    font-family: sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+    font-family: sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h4 {
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    text-align: center;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 100%;
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 4px 4px 4px 4px;
+    text-align: left;
+}
+
+label {
+    font-family: sans-serif;
+    font-size: 18px;
+    margin: 4px 4px 4px 4px;
+    text-align: left;
+}
+
+img {
+    border: 2px solid #000;
+}
+
+button:hover {
+    background-color: yellow;
+}
+
+.button {
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 175px;
+}
+
+
+.headerparent {
+    display: flex;
+}
+
+.navtitle {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-evenly;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+}
+
+hr {
+    height: 4px;
+    background-color: black;
+}
+
+.titletext {
+    display: flex;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    text-align: center;
+}
+
+
+/* PRODUCT GALLERY ("INDEX") */
+
+.index-body {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    margin: auto;
+    width: 1200px;
+}
+
+.index-container-1 {
+    display: flex;
+}
+
+.index-container-2 {
+    display: flex;
+}
+
+.indexcaption {
+    display: flex;
+    flex-direction: column;
+    margin: 4px 4px 4px 16px;
+}
+
+.flexbox-item {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    text-align: center;
+}
+
+.flexbox-item img {
+    margin: 10px 10px 10px 10px;
+}
+
+.flexbox-item:hover {
+    background-color: yellow;
+    font-weight: bold;
+}
+/* yellow appears on hover */
+
+.index-imagestyle {
+    width: 350px;
+    height: 350px;
+}
+
+
+/* CART */
+
+.cartproducts {
+    display: flex;
+    flex-direction: column;
+    margin-left: 400px;
+}
+
+.cartproduct1 {
+    display: flex;
+    padding: 4px 4px 4px 4px;
+    margin: 16px 16px 16px 16px;
+    align-items: stretch;
+}
+
+.cartproduct2 {
+    display: flex;
+    padding: 4px 4px 4px 4px;
+    margin: 16px 16px 16px 16px;
+    align-items: stretch;
+}
+
+.cartimgstyle {
+    width: 100px;
+}
+
+.cartcaption {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    width: 300px;
+}
+
+.cartimgremove {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.cart-totalprice{
+    width: 610px;
+    overflow: hidden;
+}
+
+.cart-total{
+    width: 50px;
+    float: left;
+}
+
+.cart-price{
+    overflow: hidden;
+    text-align: right;
+}
+
+.remove {
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* PRODUCT DETAILS ("OTHER PAGE") */
+
+.productdetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.productdetails-imagestyle {
+    width: 400px;
+    height: 400px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.productdetails-caption {
+    width: 300px;
+}
+
+.productdetails-captiondropdowns {
+    display: flex;
+    flex-direction: column;
+}
+
+.productdetails-total {
+    display: flex;
+}
+
+.productdetails-captiondropdownstotal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.dropdown {
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.buttonright {
+    margin-left: 160px;
+}
