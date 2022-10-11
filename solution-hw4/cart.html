@@ -1,51 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
     <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <title>Bun Bun</title>
-  </head>
+    <script src="js/rollsData.js" defer></script>
+    <script src="js/script.js" defer></script>
 
-  <body>
+</head>
+
+<body>
 
     <div class="headerparent">
-      <div class="logo">
+        <div class="logo">
             <img class="logo" src="./products/logo-01.svg" alt="logo">
-      </div>
-
-      <div class="navtitle">
-            <div class = "nav">
-                <a href="./index.html" class="hovermenu">products</a>
-                <a href="./cart.html" class="hovermenu">cart</a>
-                  <!-- Hyperlinks "cart" and "products" -->
-            </div>
-            <div> <hr> </div>
-            <div class="titletext">
-                  <h4> Shopping cart </h4>
-            </div>
-      </div>
-    </div>
-    
-    <div class="cartproducts">
-
-        <div class="cartproduct1">
-            <div class="cartimgremove">
-            <a href="./otherpage.html">
-            <img src="./products/original-cinnamon-roll.jpg" alt="original cinnamon roll" class="cartimgstyle">
-            </a>
-            <p class="remove"> Remove </p>
-            </div>
-            <div class="cartcaption">
-                <p> Original Cinnamon Roll </p>
-                <p> Glazing: Keep original </p>
-                <p> Pack Size: 1 </p>
-            </div>
-            <div>
-            <p> $2.49 </p>
-            </div>
         </div>
 
+        <div class="navtitle">
+            <div class="nav">
+                <a href="./index.html" class="hovermenu">products</a>
+                <a href="./cart.html" class="hovermenu">cart</a>
+                <!-- Hyperlinks "cart" and "products" -->
+            </div>
+            <div>
+                <hr>
+            </div>
+            <div class="titletext">
+                <h4> Shopping cart </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="cartproducts">
+
+        <template id="bunTemplate">
+
+            <div class="cartproduct1">
+                <div class="cartimgremove">
+                    <a href="./otherpage.html">
+                        <img src="./products/original-cinnamon-roll.jpg" alt="original cinnamon roll"
+                            class="cartimgstyle">
+                    </a>
+                    <p class="remove"> Remove </p>
+                </div>
+                <div class="cartcaption">
+                    <p> Original Cinnamon Roll </p>
+                    <p> Glazing: Keep original </p>
+                    <p> Pack Size: 1 </p>
+                </div>
+                <div>
+                    <p> $2.49 </p>
+                </div>
+            </div>
+
+        </template>
+        <!-- 
         <div class="cartproduct2">
             <div class="cartimgremove">
             <a href="./otherpage.html">
@@ -61,23 +71,24 @@
             <div>
             <p> $29.74 </p>
             </div>
+        </div> -->
+
+        <div>
+            <hr>
         </div>
-        
-        <div> <hr> </div>
 
         <div class="cart-totalprice">
 
-        <p class="cart-total"> Total: </p>
-            
-        <p class="cart-price"> $29.74 </p>
+            <p class="cart-total"> Total: </p>
+
+            <p class="cart-price"> $29.74 </p>
 
         </div>
-        
+
         <div class="button"> <button type="button">Checkout</button> </div>
 
-        </div>
-        
-    </body>
-    
-    </html>
-    
+    </div>
+
+</body>
+
+</html>
