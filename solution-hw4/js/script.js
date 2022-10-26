@@ -174,23 +174,6 @@ function addToCart() {
     console.log(cart);
 }
 
-if (document.URL.includes("cart.html")) {
-    let cart = new Set();
-
-    cart.add(new Roll("Original Cinnamon Roll", "Sugar Milk", 1, 2.49));
-    cart.add(new Roll("Walnut Cinnamon Roll", "Vanilla Milk", 12, 3.49));
-    cart.add(new Roll("Raisin Cinnamon Roll", "Sugar Milk", 3, 2.99));
-    cart.add(new Roll("Apple Cinnamon Roll", "Original", 3, 3.49)); 
-
-    function createElement(item) {
-        const template = document.querySelector("#bunTemplate");
-        console.log(template);
-        const clone = template.content.cloneNode(true)
-        console.log(clone)
-        
-    }
-}
-
 
 
 
