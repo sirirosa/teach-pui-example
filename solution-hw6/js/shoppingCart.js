@@ -2,8 +2,8 @@
 
 const glaze = {
     "Keep Original": 0,
-    "Sugar milk": 0,
-    "Vanilla milk" : 0.5,
+    "Sugar Milk": 0,
+    "Vanilla Milk" : 0.5,
     "Double Chocolate": 1.5
 }
 
